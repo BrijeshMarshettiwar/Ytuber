@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Hiretuber
+from django.contrib import messages
 
 # Create your views here.
     # first_name = models.CharField(max_length=100)
