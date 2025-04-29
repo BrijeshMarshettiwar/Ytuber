@@ -60,6 +60,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # Downloaded Middleware
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'tubers.urls'
@@ -86,13 +89,15 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lcotubers',
-        'USER': 'postgres',
-        'PASSWORD':'Brijesh@2001',
-        'HOST':'localhost'
+        'USER': 'root',
+        'PASSWORD': 'Brijesh@123',
+        'HOST': '127.0.0.1',
+        'PORT': '3306'
     }
 }
 
